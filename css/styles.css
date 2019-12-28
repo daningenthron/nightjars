@@ -115,7 +115,8 @@ header .download .btn-light:hover {
 }
 header .jumbotron {
   background-image: url('../images/Truck.jpg');
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 /* Show - Section */
 .show-stage {

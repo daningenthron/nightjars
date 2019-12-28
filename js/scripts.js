@@ -21,7 +21,6 @@ $(document).ready(function() {
 
     // Carousel
     var $item = $(".carousel-item");
-    var $wHeight = $(window).height();
     $item.eq(0).addClass("active");
     $item.height($wHeight);
     $item.addClass("full-screen");
@@ -37,6 +36,7 @@ $(document).ready(function() {
 
     // Jumbotron
     var $jtron = $('.jumbotron');
+    var $wHeight = $(window).height();
     $jtron.height($wHeight); 
 
     $(window).on("resize", function() {
