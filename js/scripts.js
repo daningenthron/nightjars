@@ -19,21 +19,6 @@ $(document).ready(function() {
         0 < $(window).scrollTop() ? $(".navbar").addClass("sticky") : $(".navbar").removeClass("sticky"), 50 < $(window).scrollTop() ? $(".scroll-to-top").addClass("affix") : $(".scroll-to-top").removeClass("affix")
     });
 
-    // Carousel
-    var $item = $(".carousel-item");
-    $item.eq(0).addClass("active");
-    $item.height($wHeight);
-    $item.addClass("full-screen");
-
-    $(".carousel img").each(function() {
-        var a = $(this).attr("src"),
-            o = $(this).attr("data-color");
-        $(this).parent().css({
-            "background-image": "url(" + a + ")",
-            "background-color": o
-        }), $(this).remove()
-    })
-
     // Jumbotron
     var $jtron = $('.jumbotron');
     var $wHeight = $(window).height();
